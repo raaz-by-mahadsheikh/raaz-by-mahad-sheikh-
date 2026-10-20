@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#050505">
+<meta name="description" content="RAAZ by Mahad Sheikh — luxury watches, timeless detail and mechanical artistry.">
+<title>RAAZ by Mahad Sheikh | Luxury Watches</title>
+<style>
+:root{--bg:#050505;--panel:#101010;--white:#f7f7f4;--muted:#a5a5a5;--line:#292929;--gold:#c7aa76}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif;letter-spacing:.02em}
+a{color:inherit;text-decoration:none}.topline{height:3px;background:linear-gradient(90deg,#111,#fff,#a98a56,#fff,#111)}
+header{position:sticky;top:0;z-index:10;background:rgba(5,5,5,.92);backdrop-filter:blur(14px);border-bottom:1px solid #222}
+.nav{max-width:1200px;margin:auto;padding:18px 5%;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-family:Georgia,serif;font-size:22px;letter-spacing:.23em}.logo small{display:block;font:9px Arial,sans-serif;letter-spacing:.28em;color:#aaa;margin-top:5px}
+nav{display:flex;gap:24px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#ddd}nav a:hover{color:var(--gold)}
+.hero{min-height:610px;display:flex;align-items:center;position:relative;overflow:hidden;background:#070707}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.96) 0%,rgba(0,0,0,.78) 42%,rgba(0,0,0,.1) 100%),url('https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=2000&q=90') center 48%/cover no-repeat;opacity:.92}
+.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 72% 48%,transparent 0%,rgba(0,0,0,.22) 55%,#050505 100%);pointer-events:none}
+.hero-inner{position:relative;z-index:1;max-width:1200px;width:100%;margin:auto;padding:90px 5%}
+.eyebrow{font-size:10px;letter-spacing:.34em;color:var(--gold);text-transform:uppercase}
+h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(46px,7vw,86px);font-weight:400;line-height:1.02;letter-spacing:.015em;max-width:650px;margin:23px 0}
+h1 em{font-weight:400;color:#d4d4d0}.hero p{color:#c5c5c5;line-height:1.8;max-width:430px;font-size:14px}
+.cta{display:inline-block;border:1px solid #eee;padding:15px 24px;margin-top:22px;font-size:10px;letter-spacing:.2em;text-transform:uppercase;transition:.25s}.cta:hover{background:#fff;color:#000}
+.hero-note{margin-top:48px;color:#8e8e8e;font-size:9px;letter-spacing:.28em;text-transform:uppercase}
+section{max-width:1200px;margin:auto;padding:82px 5%}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:34px}
+.kicker{color:var(--gold);font-size:10px;letter-spacing:.3em;text-transform:uppercase}
+h2{font:400 clamp(30px,4vw,46px) Georgia,serif;margin:12px 0 0}.section-head p{color:var(--muted);font-size:12px;max-width:330px;line-height:1.7}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.product{background:#0c0c0c;border:1px solid #222;overflow:hidden;transition:transform .3s,border-color .3s}.product:hover{transform:translateY(-5px);border-color:#777}
+.product-image{height:290px;background:#111;position:relative;overflow:hidden}
+.product-image img{width:100%;height:100%;object-fit:cover;display:block;filter:contrast(1.04);transition:transform .6s}.product:hover img{transform:scale(1.05)}
+.tag{position:absolute;top:14px;left:14px;background:rgba(0,0,0,.7);border:1px solid #555;padding:7px 9px;font-size:8px;letter-spacing:.17em;text-transform:uppercase}
+.product-info{padding:20px}.product-info h3{font:22px Georgia,serif;font-weight:400;margin:0 0 9px}.product-info p{font-size:11px;color:#aaa;line-height:1.7;min-height:38px;margin:0 0 18px}
+.product-bottom{display:flex;align-items:center;justify-content:space-between;border-top:1px solid #292929;padding-top:15px;gap:8px}.price{font-size:11px;letter-spacing:.08em;color:#eee}.order{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center;border-top:1px solid #222;border-bottom:1px solid #222}
+.story-image{min-height:360px;background:url('https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?auto=format&fit=crop&w=1200&q=85') center/cover no-repeat;background-color:#111}
+.story-copy p{color:#aaa;line-height:1.9;font-size:13px}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px}.feature{border-top:1px solid #444;padding-top:15px}.feature strong{display:block;font:19px Georgia,serif;font-weight:400;margin-bottom:8px}.feature span{font-size:10px;color:#999;line-height:1.6}
+.contact{background:linear-gradient(135deg,#111,#050505);border:1px solid #292929;text-align:center;padding:60px 24px}.contact h2{margin-bottom:15px}.contact p{color:#aaa;font-size:13px;line-height:1.8}.contact .cta{margin:10px 6px 0}
+footer{border-top:1px solid #222;text-align:center;padding:34px 20px;color:#8b8b8b;font-size:9px;letter-spacing:.18em;line-height:2.2}footer b{display:block;color:#eee;font:16px Georgia,serif;letter-spacing:.22em;margin-bottom:8px}
+@media(max-width:760px){.nav{padding:16px 5%}nav{gap:12px;font-size:9px}nav a:nth-child(2){display:none}.hero{min-height:570px}.hero:before{background-image:linear-gradient(90deg,rgba(0,0,0,.94),rgba(0,0,0,.46)),url('https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=1200&q=85');background-position:58% center}.hero-inner{padding:80px 6%}.grid{grid-template-columns:1fr 1fr;gap:12px}.product-image{height:210px}.product-info{padding:14px}.product-info h3{font-size:18px}.product-info p{font-size:10px}.product-bottom{align-items:flex-start;flex-direction:column}.section-head{display:block}.section-head p{margin-top:15px}.story{grid-template-columns:1fr;gap:28px}.story-image{min-height:260px}.features{grid-template-columns:1fr;gap:18px}section{padding:62px 5%}}
+@media(max-width:420px){nav a{font-size:8px}.logo{font-size:18px}.grid{grid-template-columns:1fr}.product-image{height:300px}}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<header><div class="nav">
+<a class="logo" href="#home">RAAZ<small>BY MAHAD SHEIKH</small></a>
+<nav><a href="#collection">Collection</a><a href="#craft">Craftsmanship</a><a href="#contact">Contact</a></nav>
+</div></header>
+<main>
+<div class="hero" id="home"><div class="hero-inner">
+<div class="eyebrow">Est. 2026 · A Mark of Distinction</div>
+<h1>Luxury in every<br><em>detail.</em></h1>
+<p>For those who appreciate the art of time. Discover statement timepieces, refined design and the beauty of mechanical craftsmanship.</p>
+<a class="cta" href="#collection">Explore the collection&nbsp; ↗</a>
+<div class="hero-note">Exclusivity · Elegance · Legacy</div>
+</div></div>
+<section id="collection">
+<div class="section-head"><div><div class="kicker">Curated selection</div><h2>The Watch Edit</h2></div><p>From timeless dress watches to intricate skeleton movements — find a style that speaks for you.</p></div>
+<div class="grid">
+<article class="product"><div class="product-image"><img loading="lazy" src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=900&q=85" alt="Classic silver luxury wristwatch"><span class="tag">Timeless classic</span></div><div class="product-info"><h3>Classic Signature</h3><p>A refined silver-tone look with a clean, confident presence.</p><div class="product-bottom"><span class="price">Price on request</span><a class="order" href="#contact" data-watch="Classic Signature">Enquire ↗</a></div></div></article>
+<article class="product"><div class="product-image"><img loading="lazy" src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=900&q=85" alt="Premium steel wristwatch"><span class="tag">Modern elegance</span></div><div class="product-info"><h3>Steel Elegance</h3><p>Understated sophistication, polished details and versatile style.</p><div class="product-bottom"><span class="price">Price on request</span><a class="order" href="#contact" data-watch="Steel Elegance">Enquire ↗</a></div></div></article>
+<article class="product"><div class="product-image"><img loading="lazy" src="https://cdn.clothbase.com/uploads/8d0226c2-7750-40c4-9857-c8448dacd36f/image.jpg" alt="Mechanical skeleton watch with visible movement"><span class="tag">Mechanical art</span></div><div class="product-info"><h3>Skeleton Master</h3><p>Inspired by exposed gears, intricate mechanics and horological artistry.</p><div class="product-bottom"><span class="price">Price on request</span><a class="order" href="#contact" data-watch="Skeleton Master">Enquire ↗</a></div></div></article>
+<article class="product"><div class="product-image"><img loading="lazy" src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=900&q=85" alt="Luxury dark dial wristwatch"><span class="tag">Dark edition</span></div><div class="product-info"><h3>Noir Edition</h3><p>Jet-black character with bold contrast and a premium finish.</p><div class="product-bottom"><span class="price">Price on request</span><a class="order" href="#contact" data-watch="Noir Edition">Enquire ↗</a></div></div></article>
+<article class="product"><div class="product-image"><img loading="lazy" src="https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?auto=format&fit=crop&w=900&q=85" alt="Minimal luxury wristwatch"><span class="tag">Minimal form</span></div><div class="product-info"><h3>Essential Dress</h3><p>Clean lines and quiet luxury for everyday sophistication.</p><div class="product-bottom"><span class="price">Price on request</span><a class="order" href="#contact" data-watch="Essential Dress">Enquire ↗</a></div></div></article>
+<article class="product"><div class="product-image"><img loading="lazy" src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=900&q=85" alt="Premium gold-tone wristwatch"><span class="tag">Statement piece</span></div><div class="product-info"><h3>Golden Hour</h3><p>A warm metallic accent for a confident, dressed-up look.</p><div class="product-bottom"><span class="price">Price on request</span><a class="order" href="#contact" data-watch="Golden Hour">Enquire ↗</a></div></div></article>
+</div>
+<p style="color:#777;font-size:10px;line-height:1.8;margin-top:22px">Product photos are illustrative. RAAZ is an independent brand; third-party trademarks belong to their respective owners. Add your actual product photos, availability and prices before publishing.</p>
+</section>
+<section class="story" id="craft">
+<div class="story-image" role="img" aria-label="Luxury watch detail"></div>
+<div class="story-copy"><div class="kicker">The RAAZ philosophy</div><h2>Time, with a point of view.</h2><p>RAAZ by Mahad Sheikh is built around a simple idea: personal style lives in the details. Our edit celebrates elegant silhouettes, striking finishes and the fascinating engineering behind mechanical watches.</p><p>Choose with intention. Wear your story.</p>
+<div class="features"><div class="feature"><strong>Elegance</strong><span>Clean design with a distinctive presence.</span></div><div class="feature"><strong>Detail</strong><span>Finishes and movements worth a closer look.</span></div><div class="feature"><strong>Identity</strong><span>A personal expression of your style.</span></div></div>
+</div></section>
+<section id="contact"><div class="contact"><div class="kicker">Start a conversation</div><h2>Find your signature watch.</h2><p>Ask about availability, pricing and current collection.<br>We’ll help you choose your next timepiece.</p><a class="cta" id="whatsapp" href="https://wa.me/?text=Assalam-o-Alaikum%2C%20I%27m%20interested%20in%20RAAZ%20watches." target="_blank" rel="noopener">WhatsApp to enquire ↗</a><a class="cta" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram ↗</a><p style="font-size:10px;color:#777;margin-top:22px">Replace the WhatsApp link with your business number before launch.</p></div></section>
+</main>
+<footer><b>RAAZ BY MAHAD SHEIKH</b>Luxury in Every Detail. Born to Stand Out.<br>EXCLUSIVITY · ELEGANCE · LEGACY<br><span style="font-size:8px;color:#555">EST. 2026</span></footer>
+<script>
+document.querySelectorAll('[data-watch]').forEach(function(link){link.addEventListener('click',function(){var name=link.getAttribute('data-watch');var wa=document.getElementById('whatsapp');wa.href='https://wa.me/?text='+encodeURIComponent('Assalam-o-Alaikum, I am interested in the '+name+' from RAAZ by Mahad Sheikh. Please share its price and availability.');});});
+</script>
+<script>
+(function(){
+  function watchFallback(img){
+    var kind = (img.alt || '').toLowerCase();
+    var skeleton = kind.includes('skeleton') || kind.includes('mechanical');
+    var gold = kind.includes('gold') || kind.includes('statement');
+    var accent = gold ? '#c7aa76' : '#d9d9d9';
+    var gears = skeleton
+      ? '<circle cx="150" cy="150" r="46" fill="none" stroke="#c7aa76" stroke-width="4"/><circle cx="150" cy="150" r="25" fill="none" stroke="#eee" stroke-width="3"/><circle cx="150" cy="150" r="9" fill="#c7aa76"/><path d="M150 104v92M104 150h92M118 118l64 64M182 118l-64 64" stroke="#c7aa76" stroke-width="3"/><circle cx="150" cy="150" r="58" fill="none" stroke="#777" stroke-dasharray="4 6" stroke-width="2"/>'
+      : '<circle cx="150" cy="150" r="55" fill="#111" stroke="#c7aa76" stroke-width="4"/><circle cx="150" cy="150" r="47" fill="none" stroke="#eee" stroke-width="1"/><path d="M150 150 L150 117 M150 150 L177 164" stroke="#f7f7f4" stroke-width="4" stroke-linecap="round"/><circle cx="150" cy="150" r="4" fill="#c7aa76"/>';
+    var svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 360"><defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#202020"/><stop offset="1" stop-color="#050505"/></linearGradient><linearGradient id="metal"><stop stop-color="#555"/><stop offset=".5" stop-color="#eee"/><stop offset="1" stop-color="#555"/></linearGradient></defs><rect width="300" height="360" fill="url(#bg)"/><ellipse cx="150" cy="300" rx="78" ry="12" fill="#000" opacity=".65"/><g transform="translate(0 12)"><path d="M121 15 Q150 0 179 15 L174 91 L126 91Z" fill="url(#metal)" stroke="#aaa"/><path d="M126 209 L174 209 L179 292 Q150 310 121 292Z" fill="url(#metal)" stroke="#aaa"/><rect x="105" y="80" width="90" height="140" rx="22" fill="url(#metal)" stroke="#ddd" stroke-width="2"/><circle cx="150" cy="150" r="65" fill="#070707" stroke="' + accent + '" stroke-width="5"/>' + gears + '<text x="150" y="238" font-family="Georgia,serif" font-size="11" fill="#eee" text-anchor="middle" letter-spacing="4">RAAZ</text><text x="150" y="255" font-family="Arial,sans-serif" font-size="7" fill="#aaa" text-anchor="middle" letter-spacing="2">BY MAHAD SHEIKH</text></g></svg>';
+    img.onerror = null;
+    img.src = 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg);
+    img.style.objectFit = 'cover';
+  }
+  document.querySelectorAll('.product-image img, .story-image').forEach(function(el){
+    if(el.tagName === 'IMG'){
+      el.addEventListener('error', function(){ watchFallback(el); }, {once:true});
+    }
+  });
+})();
+</script>
+</body></html>
